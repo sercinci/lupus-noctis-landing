@@ -4,10 +4,6 @@
   src: url('fonts/realstone.woff') format('woff');
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
 .navbar-brand {
     font-family: 'Realstone', sans-serif;
 }
