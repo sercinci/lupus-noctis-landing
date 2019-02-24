@@ -1,3 +1,12 @@
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.02em;
+}
+
+a, a:hover {
+    color: #FFFFFF;
+}
 
 .rem-1 {
 	font-size: 1rem
@@ -35,4 +44,48 @@
 	background: url(../images/background.png);	
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.accordion .card:first-of-type {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    margin-bottom: 15px;
+}
+
+.animate-logo {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: rotation;
+    animation-name: rotation;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }

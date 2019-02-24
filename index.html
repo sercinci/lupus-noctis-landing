@@ -7,7 +7,6 @@
 
         <title>Lupus Noctis</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">        
         <meta name="robots" content="noindex"> <!-- development only -->
         <meta name="author" content="sercinci and errore37">
         <meta name="description" content="Lupus Noctis">
@@ -29,19 +28,18 @@
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/animate.css">
     </head>
-<body>
+  <body>
 
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-custom-primary border-bottom">
-        <a class="navbar-brand bg-white rounded pl-1 pr-1" href="index.html">
-            <img src="images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-primary border-bottom">
+        <a class="navbar-brand rounded pl-1 pr-1" href="index.html">
+            <img src="images/logo.svg" width="35" height="35" class="d-inline-block align-top" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar-toggler">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link text-white" href="index.html"><b>Home</b> <span class="sr-only">(current)</span></a>
@@ -52,7 +50,7 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="rules.html">Regole</a>
                 </li>
-                <li class="nav-item dropdown">
+                <!--<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
                     </a>
@@ -62,25 +60,26 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
-                </li>
-                <li class="nav-item">
+                </li>-->
+                <!--<li class="nav-item">
                     <a class="nav-link text-white" href="#">Contattaci</a>
-                </li>
+                </li>-->
             </ul>
         </div>
-    </nav> <!--END NAVBAR-->
+    </nav>
+    <!--END NAVBAR-->
 
-    <div class="container-fluid"> 
+    <main class="container-fluid"> 
 
         <!--MAIN SECTION-->
-        <div class="row bg-home">
+        <section class="row bg-home">
 
             <div class="col-lg-4 offset-lg-4 col-md-12 col-sm-12 mt-5 mb-5 p-0">
                 <div class="bg-white border rounded text-center p-5">
-                    <img src="images/logo.svg" class="animated rotateIn mt-3" width="250px"><br>
+                    <img src="images/logo.svg" class="animate-logo mt-3" width="250px"><br>
                     <h1 class="text-main mt-4 mb-4">Lupus Noctis</h1>
                     <!--<img src="images/logo_scritta.svg" class="mt-3" width="350px"><br> decidere se tenerla-->
-                    <button type="button" class="btn btn-success btn-lg mb-3 pl-5 pr-5"><b>Play Free</b></button>
+                    <button type="button" class="btn btn-success btn-lg mb-3 pl-5 pr-5"><b>Gioca gratis</b></button>
                     <p><i>on</i></p>
                     <div>
                         <i class="fab fa-apple align-middle rem-3 pl-2 pr-2"></i>
@@ -96,10 +95,11 @@
                 </div>
             </div>
 
-        </div><!--END MAIN SECTION-->
+        </section>
+        <!--END MAIN SECTION-->
 
         <!--SECOND SECTION-->
-        <div class="row bg-white border-top border-bottom">
+        <section class="row bg-white border-top border-bottom">
             <div class="col-lg-6 col-md-12 col-sm-12 p-5">
                 <h1 class="text-main">Basta carta e penna</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -121,7 +121,7 @@
                 </div>
             </div>  
             <div class="col-lg-6 d-none d-sm-block text-center p-5">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div id="lupus-app-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="images/4.png" class="d-block w-100" alt="...">
@@ -133,20 +133,21 @@
                             <img src="images/4.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#lupus-app-carousel" role="button" data-slide="prev">
                         <span aria-hidden="true"><i class="fas fa-chevron-left text-dark"></i></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#lupus-app-carousel" role="button" data-slide="next">
                         <span aria-hidden="true"><i class="fas fa-chevron-right text-dark"></i></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
             </div>              
-        </div><!--END SECOND SECTION-->
+        </section>
+        <!--END SECOND SECTION-->
 
         <!--TEAM SECTION-->
-        <div class="row bg-white border-bottom">
+        <section class="row bg-white border-bottom">
             <div class="col-lg-12 p-5">
                 <h1 class="text-center text-main mt-2 mb-5">Il Team</h1>
                 <div class="card-group">
@@ -196,12 +197,13 @@
                     </div>
                 </div>
             </div>
-        </div><!--END TEAM SECTION-->
+        </section>
+        <!--END TEAM SECTION-->
 
         <footer>
             <div class="row bg-custom-primary text-white p-3">
                 <div class="col-md-4">
-                    <span><i class="fab fa-facebook rem-2 mr-2"></i><i>Seguici su Facebook!</i></span>
+                    <a href="https://www.facebook.com/LupusNoctis" target="Facebook Lupus Noctis"><i class="fab fa-facebook rem-2 mr-2"></i><i>Seguici su Facebook!</i></a>
                 </div>
                 <div class="col-md-4">
                     <strong>Lupus Noctis 2019 - All Rights Reserved</strong>
@@ -212,10 +214,11 @@
             </div>
         </footer>
 
-    </div> <!--END FLUID-->
+    </main>
+    <!--END FLUID-->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
