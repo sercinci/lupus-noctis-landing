@@ -33,15 +33,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-custom-primary border-bottom">
-        <a class="navbar-brand bg-white rounded pl-1 pr-1" href="index.html">
-            <img src="images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-primary border-bottom">
+        <a class="navbar-brand rounded pl-1 pr-1" href="index.html">
+            <img src="images/logo.svg" width="35" height="35" class="d-inline-block align-top" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar-toggler">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link text-white" href="index.html">Home<span class="sr-only">(current)</span></a>
@@ -52,7 +53,10 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="rules.html">Regole</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="team.html">Team</a>
+                </li>
+                <!--<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
                     </a>
@@ -62,49 +66,123 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
-                </li>
-                <li class="nav-item">
+                </li>-->
+                <!--<li class="nav-item">
                     <a class="nav-link text-white" href="#">Contattaci</a>
-                </li>
+                </li>-->
             </ul>
         </div>
-    </nav> <!--END NAVBAR-->
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-12">
-          <h1>Requisiti per giocare a Lupus Noctis</h1>
-          <p>Gioca a Lupus Noctis da smartphone e tablet.</p>
-          
-          <div class="card-deck">
-            <div class="card">
-              <div class="p-3 d-flex justify-content-around align-items-center">
-                <span class="fab fa-android fa-5x"></span>
-                <span class="fas fa-plus fa-2x"></span>
-                <span class="fab fa-chrome fa-5x"></span>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title text-center">Android + Chrome v.45</h5>
-            </div>
-        </div>
-        <div class="card">
-          <div class="p-3 d-flex justify-content-around align-items-center">
-            <span class="fab fa-apple fa-5x"></span>
-            <span class="fas fa-plus fa-2x"></span>
-            <span class="fab fa-safari fa-5x"></span>
-        </div>
-        <div class="card-body">
-            <h5 class="card-title text-center">iOS + Safari v.11.1</h5>
-        </div>
-    </div>
-</div>
+    </nav>
+    <!--END NAVBAR-->
+    
+    <div class="container-fluid">
 
-<p class="mt-2">Lupus Noctis è una <em>Progressive Web Application</em>, un sito web con aspetto e caratteristiche simili ad una app nativa. Non tutti i browser e i sistemi sono ancora pienamente compatibili con questa nuova tecnologia.</p>
-</div>
-</div>
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+        <!--APP INFO-->
+        <div class="row mt-5">
+            <div class="col-lg-auto offset-lg-2 col-md-3 offset-md-1 d-none d-sm-block mb-3 pl-5">
+                <img src="images/logo.svg" width="150px">
+            </div>
+            <div class="col-lg-8 col-md-8 d-none d-sm-block">
+                <div>                    
+                    <h1>Lupus Noctis</h1>
+                    <h5 class="text-uppercase text-muted"> - Requisiti - </h5>
+                    <p class="text-muted">Gioca a Lupus Noctis da smartphone e tablet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row ml-3">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 border rounded text-justify mt-4 mb-4 p-4">
+                <p>Lupus Noctis è una <b>Progressive Web Application</b>, un sito web con aspetto e caratteristiche simili ad una app nativa. Non tutti i browser e i sistemi sono ancora pienamente compatibili con questa nuova tecnologia.</p>
+            </div>
+        </div><!--END APP INFO-->
+
+        <!--ANDROID AND IOS-->
+        <div class="row">
+            <div class="col-lg-4 col-md-12 offset-lg-2 p-5">
+                <div class="text-center mb-5">
+                    <span class="fab fa-android fa-5x"></span>
+                </div>  
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 p-3">
+                        <strong>Aggiornata</strong>
+                        <p>01/03/2019</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-3">
+                        <strong>Dimensioni</strong>
+                        <p>Trascurabili</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-3">
+                        <strong>Versione corrente</strong>
+                        <p class="d-inline">1.0</p>
+                        <span class="text-muted">beta</span>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-3">
+                        <strong>Necessario per Android</strong>
+                        <p>Chrome v.45</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-3">
+                        <strong>Lingue</strong>
+                        <p>Italiano, Inglese</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-3">
+                        <strong>Installazioni</strong>
+                        <p>500+</p>
+                    </div>                  
+                </div>              
+            </div>
+            <div class="col-lg-4 col-md-12 p-5">
+                <div class="text-center mb-5">
+                    <span class="fab fa-apple fa-5x"></span>
+                </div>  
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 p-3">
+                        <strong>Aggiornata</strong>
+                        <p>01/03/2019</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-3">
+                        <strong>Dimensioni</strong>
+                        <p>Trascurabili</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-3">
+                        <strong>Versione corrente</strong>
+                        <p class="d-inline">1.0</p>
+                        <span class="text-muted">beta</span>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-3">
+                        <strong>Necessario per iOS</strong>
+                        <p>Safari v.11.1</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-3">
+                        <strong>Lingue</strong>
+                        <p>Italiano, Inglese</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-3">
+                        <strong>Installazioni</strong>
+                        <p>700+</p>
+                    </div>                  
+                </div>
+            </div>
+        </div> <!--END ANDROID AND IOS-->
+
+        <footer class="footer">
+            <div class="row bg-custom-primary text-white p-3">
+                <div class="col-md-4">
+                    <a href="https://www.facebook.com/LupusNoctis" target="Facebook Lupus Noctis"><i class="fab fa-facebook rem-2 mr-2"></i><i>Seguici su Facebook!</i></a>
+                </div>
+                <div class="col-md-4">
+                    <strong>Lupus Noctis 2019 - All Rights Reserved</strong>
+                </div>
+                <div class="col-md-4">
+                    <p></p>
+                </div>
+            </div>
+        </footer>
+
+    </div> <!--END FLUID-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
 </body>
 </html>
